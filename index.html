@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>For You</title>
-
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Envelope</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- Landing -->
-<div class="container" id="landing">
-  <p>I made something for you.</p>
-  <p>Open this when you have a quiet moment.</p>
+<div class="envelope-wrapper">
+    <div class="envelope-card" id="card">
 
-  <button onclick="openLetter()">Open</button>
+        <!-- FRONT SIDE -->
+        <div class="card-face front-face">
+            <div class="front-text">I didn't know how else to say this</div>
+        </div>
+
+        <!-- BACK SIDE -->
+        <div class="card-face back-face">
+            <div id="envelope" class="close">
+                <div class="front flap"></div>
+                <div class="front pocket"></div>
+
+                <div class="letter">
+                  <div class="words line1"></div>
+                  <div class="words line2"></div>
+                  <div class="words line3"></div>
+                  <div class="words line4"></div>
+
+                  <!-- Image overlay -->
+                  <div class="letter-image">
+                      <img src="23905DEA-FA2C-4E81-8809-E848F59E85BA.png" alt="Portrait">
+                  </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
 </div>
 
-<!-- Letter Section -->
-<div class="container hidden" id="letterSection">
-  <p id="introText"></p>
-  <img src="letter.jpeg" class="letter">
+<div class="reset">
+    <button id="open">Open</button>
+    <button id="reset">Reset</button>
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
