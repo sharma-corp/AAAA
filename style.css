@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background: #fdf6f0;
+  font-family: serif;
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.letter {
+  max-width: 90%;
+  max-height: 80vh;
+  height: auto;
+  width: auto;
+  margin: auto;
+  display: block;
+  object-fit: contain;
+
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+
+}
